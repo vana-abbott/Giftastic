@@ -1,46 +1,35 @@
+<!DOCTYPE html>
+
 <html>
 <head>
-	<title>Giphy API by V'Ana Abbott</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
-  integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" 
-  integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgx
-  VSNgt4=" crossorigin="anonymous"></script>
-  
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
-  integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-   crossorigin="anonymous"></script>
+    <title>Gif Tastic</title>
 
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
 
 <body>
 
-<div class="container">
-    <div class="jumbotron">
-        <h1>Harry Potter Giphy Search</h1>
-    </div>
-
-    <div class="row">
-        <div class="col-md-12" id="display-buttons"></div>
-    </div>
-
-    <div class="row">
-        <div class="col-md-12">
-            <form id="form">
-                <label for="user-input">Work the magic with your fingers </label><br>
-                <input type="text" id="user-input">
-                <input id="submitPress" type="submit" value="Submit" class="btn btn-default">
-            </form>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-md-12" id="display-images"></div>
-    </div>
-
-</div>  
-<script src="assets/js/giphy.js"></script>
+<div class="container" "="">
+    <div id="animalsbuttons">
+    <button class="btn btn-info animal" data-name="Dog" style="margin: 5px;">Dog</button>
+    <button class="btn btn-info animal" data-name="Cat" style="margin: 5px;">Cat</button>
+    <button class="btn btn-info animal" data-name="Seal" style="margin: 5px;">Seal</button>
+    <button class="btn btn-info animal" data-name="Walrus" style="margin: 5px;">Walrus</button>
+    <button class="btn btn-info animal" data-name="Giraffe" style="margin: 5px;">Giraffe</button>
+</div>
+</div>
+<div id="gifs"></div>
+ <h4>Add an Animal</h4>
+    <form id="gif-form">
+        <label for="gif-input"></label>
+        <input type="text" value="" id="gif-input"><br>
+        <input type="submit" name="Button" class="btn btn-success" id="theButton" style="margin-left:8px">
+    </form>
+</div>
+<script src='https://code.jquery.com/jquery-2.1.3.min.js'></script>
+  <script type="text/javascript" src="assets/js/giphy.js"></script>
 </body>
 </html>
