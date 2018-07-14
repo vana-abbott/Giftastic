@@ -66,12 +66,8 @@ $(document).ready(function(){
     var animals = [''];
 
     
-        //This function "adds" the buttons 
-
-        // handles the event when clicked
         $('#theButton').on('click', function(){
             var animalButton = $("#gif-input").val();
-            //adds the new animal
 
             var newButton = $("<button/>").addClass( "btn btn-info animal").attr('data-name',animalButton).html(animalButton).css({'margin': '5px'});
             

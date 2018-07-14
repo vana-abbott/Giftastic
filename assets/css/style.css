@@ -18,10 +18,10 @@ label {
 }
 
 body {
-	background-image: url("../images/quote-bg-img.jpg");
-    font-family: 'Bad Script', cursive;
+    font-family: Arial, Helvetica, sans-serif;
     background-repeat: no-repeat;
     background-size: cover;
+    background: powderblue;
 }
 
 .holder {
